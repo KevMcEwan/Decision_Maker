@@ -36,5 +36,10 @@ img:hover {
     backface-visibility: hidden;
     perspective: 1000px;
   }
+
+  img {
+    width: auto;
+    height: auto;
+  }
   
   

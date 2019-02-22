@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './CoinToss.css';
+import PoundCoinHeads from '../assets/PoundCoinHeads.png';
+import PoundCoinTails from '../assets/PoundCoinTails.png';
 
 
 class CoinToss extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            coinTossArray: ["Heads", "Tails"],
-            currentSide: "Toss!"
+            coinTossArray: [PoundCoinHeads, PoundCoinTails],
+            currentSide: null
         }
         this.tossCoin = this.tossCoin.bind(this);
     }
@@ -21,7 +23,8 @@ class CoinToss extends Component {
         return (
             <div className="coin-holder">
                 <div>
-                    {this.state.currentSide}
+                    {/* {this.state.currentSide} */}
+                    <img src={this.state.currentSide}></img>
                 </div>
                 <button className="toss-coin" onClick={this.tossCoin}>Click here to toss the coin!</button>
             </div>
