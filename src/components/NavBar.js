@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-import 'bootstrap';
+import 'jquery';
 import 'popper.js/dist/popper.js';
+import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class NavBar extends Component {
@@ -16,20 +17,22 @@ class NavBar extends Component {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                            <Link to="/magic-eight-ball" style={{ textDecoration: 'none' }}>Magic Eight Ball</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/dice" style={{ textDecoration: 'none' }}>Dice</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/coin-toss" style={{ textDecoration: 'none' }}>Coin Toss</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/make-a-list" style={{ textDecoration: 'none' }}>Make A List</Link>
-                        </li>
-                    </ul>
+                    <div className="flex-bar">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item">
+                                <Link to="/magic-eight-ball" style={{ textDecoration: 'none' }}>Magic Eight Ball</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/dice" style={{ textDecoration: 'none' }}>Dice</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/coin-toss" style={{ textDecoration: 'none' }}>Coin Toss</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/make-a-list" style={{ textDecoration: 'none' }}>Make A List</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         )

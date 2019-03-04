@@ -18,3 +18,8 @@ body {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.flex-bar{
+  display: flex;
+  justify-content: space-between;
+}

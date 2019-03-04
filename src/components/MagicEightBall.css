@@ -1,36 +1,50 @@
-
-
-.eight-ball-holder{
-    text-align: center;
+.eight-ball-holder {
+    display: inline-block;
+    position: relative;
+    /* text-align: center; */
     color: white;
-} 
+}
 
-/* .eight-ball-text{
+.eight-ball-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+    /* text-align: center; */
+}
 
-button{
-        background-color: grey;
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        border-radius: 15px;
+.button-and-img {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
 
 button:hover {
-    background: #4CAF50;
+    background-color: #3e8e41
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 img {
     position: relative;
 }
-  
-  

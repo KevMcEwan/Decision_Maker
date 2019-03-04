@@ -40,14 +40,14 @@ class MagicEightBall extends Component {
 
     render() {
         return (
-            <div className="eight-ball-holder">
-                <button className="shake-ball" onClick={this.shakeBall}>Click here to shake the ball!</button>
-                <div >
+            <div className="button-and-img">
+                <div>
+                    <button className="shake-ball" onClick={this.shakeBall}>Click here to shake the ball!</button>
+                </div>
+                <div className="eight-ball-holder">
+                    <img src={Magic_eight_ball} className="img-fluid" alt="magic eight ball" ></img>
                     <div className="eight-ball-text">
                         {this.state.currentMessage}
-                    </div>
-                    <div >
-                        <img src={Magic_eight_ball} className="img-fluid" alt="magic eight ball"></img>
                     </div>
                 </div>
             </div>

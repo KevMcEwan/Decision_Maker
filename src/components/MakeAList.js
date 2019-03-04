@@ -7,7 +7,7 @@ class MakeAList extends Component {
         super(props);
         this.state = {
             choicesArray: [],
-            currentChoice: null
+            currentChoice: "Your choice will display here"
         }
         this.choicesSelector = this.choiceSelector.bind(this);
         this.createChoicesArray = this.createChoicesArray.bind(this);
@@ -46,6 +46,7 @@ class MakeAList extends Component {
                     <input type="text" id="choice4" name="choice4" className="form-control" placeholder="Choice 4" />
                     <input type="text" id="choice5" name="choice5" className="form-control" placeholder="Choice 5" />
                     <input type="text" id="choice6" name="choice6" className="form-control" placeholder="Choice 6" />
+                    <br></br>
                     <input type="submit" className="submit-button" value="Click here to decide!" />
                 </form>
                 <div>
