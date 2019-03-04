@@ -15,18 +15,19 @@ class CoinToss extends Component {
     }
 
     tossCoin() {
-        this.setState({currentSide: (this.state.coinTossArray[Math.floor(Math.random() * this.state.coinTossArray.length)])})
+        this.setState({ currentSide: (this.state.coinTossArray[Math.floor(Math.random() * this.state.coinTossArray.length)]) })
     }
 
     render() {
         const result = this.tossCoin;
         return (
             <div className="coin-holder">
+                <button className="toss-coin" onClick={this.tossCoin}>Click here to toss the coin!</button>
                 <div>
                     {/* {this.state.currentSide} */}
                     <img src={this.state.currentSide}></img>
                 </div>
-                <button className="toss-coin" onClick={this.tossCoin}>Click here to toss the coin!</button>
+
             </div>
         )
     }

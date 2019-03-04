@@ -19,17 +19,18 @@ class Dice extends Component {
     }
 
     rollDice() {
-        this.setState({currentNumber: (this.state.diceArray[Math.floor(Math.random() * this.state.diceArray.length)])})
+        this.setState({ currentNumber: (this.state.diceArray[Math.floor(Math.random() * this.state.diceArray.length)]) })
     }
 
     render() {
         const result = this.rollDice;
         return (
             <div className="dice-holder">
-                <div>
-                    <img src={this.state.currentNumber} height="500px"/>
-                </div>
                 <button className="roll-dice" onClick={this.rollDice}>Click here to roll dice!</button>
+                <div>
+                    <img src={this.state.currentNumber} height="500px" />
+                </div>
+
             </div>
         )
     }

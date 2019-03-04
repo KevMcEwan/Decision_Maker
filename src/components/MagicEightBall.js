@@ -36,7 +36,6 @@ class MagicEightBall extends Component {
 
     shakeBall() {
         this.setState({ currentMessage: (this.state.eightBallMessageArray[Math.floor(Math.random() * this.state.eightBallMessageArray.length)]) });
-        
     }
 
     render() {
@@ -58,8 +57,5 @@ class MagicEightBall extends Component {
 
 export default MagicEightBall;
 
-{/* <h1 class="animated infinite bounce delay-2s">Example</h1> */}
-// $('#button').onClick(function(){
-//     $('#target_element').addClass('animate_class_name');
-// });
+
 
