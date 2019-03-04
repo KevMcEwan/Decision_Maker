@@ -9,7 +9,7 @@ class CoinToss extends Component {
         super(props);
         this.state = {
             coinTossArray: [PoundCoinHeads, PoundCoinTails],
-            currentSide: null
+            currentSide: PoundCoinHeads
         };
         this.tossCoin = this.tossCoin.bind(this);
     }
@@ -22,9 +22,11 @@ class CoinToss extends Component {
         const result = this.tossCoin;
         return (
             <div className="coin-holder">
-                <button className="toss-coin" onClick={this.tossCoin}>Click here to toss the coin!</button>
-                <div className="coin-img">
-                    <img src={this.state.currentSide} className="img-fluid"></img>
+                <div className="toss-coin">
+                    <img src={this.state.currentSide} className="img-fluid" onClick={this.tossCoin} ></img>
+                </div>
+                <div>
+                    Click on the coin to toss it
                 </div>
             </div>
         )
