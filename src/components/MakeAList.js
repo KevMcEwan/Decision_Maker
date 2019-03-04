@@ -14,13 +14,13 @@ class MakeAList extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
-    handleSubmit(event){
+    handleSubmit(event) {
         event.preventDefault();
         this.createChoicesArray(event);
         this.choiceSelector();
     };
 
-    createChoicesArray(event){
+    createChoicesArray(event) {
         let array = [];
         array.push(event.target.choice1.value);
         array.push(event.target.choice2.value);
@@ -36,7 +36,7 @@ class MakeAList extends Component {
     };
 
     render() {
-  
+
         return (
             <div className="choices-holder">
                 <form className="choices-form" onSubmit={this.handleSubmit}>
@@ -51,9 +51,6 @@ class MakeAList extends Component {
                 <div>
                     {this.state.currentChoice}
                 </div>
-
-
-
             </div>
         )
     }
