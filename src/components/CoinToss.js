@@ -10,22 +10,21 @@ class CoinToss extends Component {
         this.state = {
             coinTossArray: [PoundCoinHeads, PoundCoinTails],
             currentSide: null
-        }
+        };
         this.tossCoin = this.tossCoin.bind(this);
     }
 
     tossCoin() {
         this.setState({ currentSide: (this.state.coinTossArray[Math.floor(Math.random() * this.state.coinTossArray.length)]) })
-    }
+    };
 
     render() {
         const result = this.tossCoin;
         return (
             <div className="coin-holder">
                 <button className="toss-coin" onClick={this.tossCoin}>Click here to toss the coin!</button>
-                <div>
-                    {/* {this.state.currentSide} */}
-                    <img src={this.state.currentSide}></img>
+                <div className="coin-img">
+                    <img src={this.state.currentSide} className="img-fluid"></img>
                 </div>
             </div>
         )
@@ -34,14 +33,3 @@ class CoinToss extends Component {
 
 export default CoinToss;
 
-input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Diamond)
-    basic.showIcon(IconNames.SmallDiamond)
-    basic.showIcon(IconNames.Diamond)
-    basic.showIcon(IconNames.SmallDiamond)
-    if (Math.randomBoolean()) {
-        basic.showIcon(IconNames.No)
-    } else {
-        basic.showIcon(IconNames.Yes)
-    }
-})

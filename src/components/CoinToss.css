@@ -1,42 +1,47 @@
-.coin-holder{
+.coin-holder {
     position: relative;
     text-align: center;
     color: black;
     font-size: 50px;
 }
 
-.coin-text{
+.coin-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-button{
-        background-color: grey;
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        border-radius: 15px;
+button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15px;
 }
 
 button:hover {
     background: #4CAF50;
 }
 
-img:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-
-  img {
+.coin-img {
     width: auto;
     height: auto;
-  }
+    animation: coin-toss 0.5s linear infinite;
+}
+
+@keyframes coin-toss {
+    from {
+        transform: scale3d(1, 1, 1);
+        left: 64px;
+    }
+    to {
+        transform: scale3d(1, 0, 1);
+        left: 6px;
+    }
+}

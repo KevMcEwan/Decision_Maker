@@ -1,17 +1,16 @@
 
 
 .eight-ball-holder{
-    position: relative;
     text-align: center;
     color: white;
-}
+} 
 
-.eight-ball-text{
+/* .eight-ball-text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 button{
         background-color: grey;
@@ -30,16 +29,8 @@ button:hover {
     background: #4CAF50;
 }
 
-img:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-
-  img {
-    width: auto;
-    height: auto;
-  }
+img {
+    position: relative;
+}
   
   

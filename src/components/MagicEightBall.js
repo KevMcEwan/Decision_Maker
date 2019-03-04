@@ -46,8 +46,8 @@ class MagicEightBall extends Component {
                     <div className="eight-ball-text">
                         {this.state.currentMessage}
                     </div>
-                    <div className="animated infinite wobble">
-                        <img src={Magic_eight_ball} height="500"></img>
+                    <div >
+                        <img src={Magic_eight_ball} className="img-fluid" alt="magic eight ball"></img>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@ class Dice extends Component {
             <div className="dice-holder">
                 <button className="roll-dice" onClick={this.rollDice}>Click here to roll dice!</button>
                 <div>
-                    <img src={this.state.currentNumber} height="500px" />
+                    <img src={this.state.currentNumber} className="img-fluid" />
                 </div>
 
             </div>
