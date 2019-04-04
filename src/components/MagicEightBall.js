@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./MagicEightBall.css";
 import Magic_eight_ball from '../assets/Magic_eight_ball.png';
+import randomArrayElement from './RandomNumberGenerator.js';
 
 
 class MagicEightBall extends Component {
@@ -35,7 +36,7 @@ class MagicEightBall extends Component {
     }
 
     shakeBall() {
-        this.setState({ currentMessage: (this.state.eightBallMessageArray[Math.floor(Math.random() * this.state.eightBallMessageArray.length)]) });
+        this.setState({ currentMessage: (randomArrayElement(this.state.eightBallMessageArray))});
     }
 
     render() {

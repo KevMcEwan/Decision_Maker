@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './MakeAList.css';
+import randomArrayElement from './RandomNumberGenerator.js';
 
 
 class MakeAList extends Component {
@@ -32,7 +33,7 @@ class MakeAList extends Component {
     };
 
     choiceSelector() {
-        this.setState({ currentChoice: (this.state.choicesArray[Math.floor(Math.random() * this.state.choicesArray.length)]) });
+        this.setState({ currentChoice: (randomArrayElement(this.state.choicesArray)) });
     };
 
     render() {

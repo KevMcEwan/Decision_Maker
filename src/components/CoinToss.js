@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CoinToss.css';
 import PoundCoinHeads from '../assets/PoundCoinHeads.png';
 import PoundCoinTails from '../assets/PoundCoinTails.png';
+import randomArrayElement from './RandomNumberGenerator.js';
 
 
 class CoinToss extends Component {
@@ -15,7 +16,7 @@ class CoinToss extends Component {
     }
 
     tossCoin() {
-        this.setState({ currentSide: (this.state.coinTossArray[Math.floor(Math.random() * this.state.coinTossArray.length)]) })
+        this.setState({ currentSide: (randomArrayElement(this.state.coinTossArray))})
     };
 
     render() {
